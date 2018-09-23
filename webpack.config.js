@@ -9,7 +9,7 @@ module.exports = (env, argv) => {
       path: path.resolve(__dirname, 'lib'),
       filename: 'index.min.js',
       libraryTarget: "umd",
-      library: 'wc-gestdoc',
+      library: 'svg_lib',
       umdNamedDefine: true,
     },
     devtool: 'source-map',

@@ -1,7 +1,7 @@
 {
-  "name": "wc-gestdoc",
+  "name": "svg",
   "version": "1.0.0",
-  "description": "wc gestor documental",
+  "description": "tools svg",
   "main": "lib/index.min.js",
   "scripts": {
     "build": "webpack --mode=production --config webpack.config.js",
@@ -12,7 +12,7 @@
     "all": "yarn build-dev && yarn demo",
     "all-s": "yarn build-dev && yarn demo-s"
   },
-  "author": "",
+  "author": "Julio Fernández Corral",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.0.0",
