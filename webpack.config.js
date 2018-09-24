@@ -65,7 +65,7 @@ module.exports = (env, argv) => {
   if (argv.mode === 'development') {
     //console.log(JSON.stringify(argv, null, 4))
     //console.log(JSON.stringify(env, null, 4))
-    config.devtool = 'none';
+    //config.devtool = 'none';
     config.output.filename = 'index.js';
   }
   else{

@@ -8,6 +8,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 })
 module.exports = env => {
   let config = {
+    devtool: "source-map",
     entry: ['./src/index.js'],
     output: {
       path: path.resolve(__dirname,'./dist'),
@@ -52,6 +53,7 @@ module.exports = env => {
             }
           ]
         },
+        {test: /\.js$/, use: ['source-map-loader'], enforce: "pre", include:[path.resolve(__dirname, "../lib/index.js")]},
         {
           test: /\.(eot|woff|woff2|ttf|svg)(\?[\s\S]+)?$/,
           use: [{
