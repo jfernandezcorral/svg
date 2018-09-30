@@ -1,8 +1,8 @@
 const NS ={svg: 'http://www.w3.org/2000/svg', xlink: 'http://www.w3.org/1999/xlink'}
-const construyeSVG = (w, h, styles, vw, vh)=>{
+const construyeSVG = (styles, w, h, vw=1024, vh=1024)=>{//styles, w, h, 1024, 1024
     const el = document.createElementNS(NS.svg, 'svg')
-    el.setAttribute("width", w)
-    el.setAttribute("height", h)
+    w && el.setAttribute("width", w)
+    h && el.setAttribute("height", h)
     el.setAttribute("viewBox", `0 0 ${String(vw)} ${String(vh)}`)
     const tmp = document.createElementNS(NS.svg, 'style')
     tmp.setAttribute("type", 'text/css')
