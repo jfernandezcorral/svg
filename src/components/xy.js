@@ -4,11 +4,13 @@ const cfgDefault = {
     puntos: [{e: "Enero", v: 25}, {e: "Febrero", v: -5}, {e: "Marzo", v: 10}]
 }
 const calculoRango = (min, max)=>{
-    //
-    if (max-min == 0){
-        return (max==0? [0, 1]: [max-1, max+1])
+    const rango = max - min
+    if (rango == 0){
+        return (max==0? [0, 0.5, 1]: [max-1, max, max+1])
     }
-    return [2, 5]
+    const srango = rango.toString()
+    
+    return [min, max-min/3, (max-min)*2/3, max]
 }
 const h = 1000
 const t = 0.04
