@@ -1,7 +1,8 @@
 import styles from './xy.scss'
 import {construyeSVG, appendTo, setAtt} from './tools.js'
 const cfgDefault = {
-    puntos: [{e: "Enero", v: 400}, {e: "Febrero", v: 231}, {e: "Marzo", v: 100}, {e: "Abril", v: 180}]
+    abcisa: 'Importe',
+    puntos: [{e: "Enero", v: 400}, {e: "Febrero", v: 231}, {e: "Marzo", v: 0}, {e: "Abril", v: 180},{e: "Mayo", v:0.9}]
 }
 const orden = num=>{
     //console.log(num)
@@ -83,6 +84,7 @@ const xy = (padre, cfg=cfgDefault, aspectRatio=16/9)=>{
     axis.add(`<line y2="${h}"/>`)
     paintMarcas(puntos)
     paint()
+    svg.add(`<text class="titulo_abcisa" x="0" y="25" transform="rotate(-70) translate(200,1000)">${cfg.abcisa}</text>`)
     padre.appendChild(svg)
     return svg
 }
