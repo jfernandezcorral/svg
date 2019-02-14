@@ -5,5 +5,13 @@
         fill: #333;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 18px;
+        &.abcisa{
+            text-anchor: end; 
+        }
+    }
+    path.grafica, use.cir{
+        stroke: chocolate;
+        stroke-width: 4px;
+        fill: none;
     }
 }
