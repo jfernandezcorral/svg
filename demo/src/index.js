@@ -1,8 +1,8 @@
 import './base.scss'
-import {prueba, xy} from '../../lib/index'
+import {xy, donut} from '../../lib/index'
 const client = document.querySelector('#client')
 
-const svg = xy(client)
+const svg = donut(client, undefined)
 svg.classList.add('p')
 
 

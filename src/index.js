@@ -1,4 +1,6 @@
-import {prueba} from './components/prueba'
-import {xy} from './components/xy'
+//import {prueba} from './components/prueba'
+//import {xy} from './components/xy'
+import {xy, donut} from './d3w/xy'
 
-export {prueba, xy}
+
+export {xy, donut}
